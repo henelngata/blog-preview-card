@@ -8,7 +8,7 @@ export default function Home() {
       <link rel="icon" href="/assets/images/favi.png" sizes="any" />
       </Head>
    <main>
-    <section><img src="./assets/images/illustration-article.svg" alt="illustaration" /></section>
+    <section className="img"><img src="./assets/images/illustration-article.svg" alt="illustaration" /></section>
     
     <p className="learning">Learning</p>
 

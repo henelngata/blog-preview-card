@@ -18,7 +18,7 @@ body{
   background-color: var(--Yellow);
 }
 main{
-  width: 49%;
+  width: 50vw;
   margin: auto;
   margin-top: 5em;
   border: 2px solid var(--Black);
@@ -26,6 +26,7 @@ main{
   padding: .9em;
   background-color: var(--White);
   box-shadow: 10px 10px;
+  
 }
 
 h1{
@@ -33,6 +34,12 @@ h1{
   margin: .6em 0;
   color: var(--Yellow);
 }
+
+.img img{
+  object-fit: fill;
+  width: 100%;
+}
+
 .learning{
   display: inline-block;
   
@@ -56,4 +63,11 @@ h1{
 .padding-left{
   padding-left: .9em;
   font-weight: bold;
+}
+
+/* CSS to target mobile devices */
+@media (max-width: 768px) {
+  main {
+    width: 90%;
+  }
 }
