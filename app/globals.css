@@ -30,7 +30,7 @@ main{
 }
 
 h1{
-  font-size: 1.8em;
+  font-size: 4vw;
   margin: .6em 0;
   color: var(--Yellow);
 }
@@ -69,5 +69,8 @@ h1{
 @media (max-width: 768px) {
   main {
     width: 90%;
+  }
+  h1{
+    font-size: 5vw;
   }
 }
