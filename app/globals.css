@@ -1,33 +1,59 @@
-@tailwind base;
+/* @tailwind base;
 @tailwind components;
-@tailwind utilities;
+@tailwind utilities; */
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+:root{
+  --Yellow: hsl(47, 88%, 63%);
+  --White: hsl(0, 0%, 100%);
+  --Grey: hsl(0, 0%, 50%);
+  --Black: hsl(0, 0%, 7%);
+}
+body{
+  background-color: var(--Yellow);
+}
+main{
+  width: 49%;
+  margin: auto;
+  margin-top: 5em;
+  border: 2px solid var(--Black);
+  border-radius: 15px;
+  padding: .9em;
+  background-color: var(--White);
+  box-shadow: 10px 10px;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+h1{
+  font-size: 1.8em;
+  margin: .6em 0;
+  color: var(--Yellow);
+}
+.learning{
+  display: inline-block;
+  
+  margin: 1em 0;
+  padding: .4em .9em;
+  background-color: var(--Yellow);
+  border-radius: 5px;
+  font-weight: bold;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.gray-out{
+  color: var(--Grey);
+  margin-bottom: 1.3em;
+}
+
+.flex{
+  display: flex;
+  align-items: center;
+  margin-bottom: .8em;
+}
+.padding-left{
+  padding-left: .9em;
+  font-weight: bold;
 }
